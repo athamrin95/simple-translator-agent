@@ -86,7 +86,7 @@ def call_ai(client:OpenAI, user_input:str, openrouter_model:str) -> None:
             Ignore the final note for testing purposes section.
             """
         except Exception as e:
-            print(f"An error occured: {e}")
+            print(f"An error occurred: {e}")
 
         if attempt + 1 < max_attempts:
             print(f"Retrying...(attempt {attempt+1} out of {max_attempts-1})")
